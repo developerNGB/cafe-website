@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menu — The Green Cup Café</title>
+<meta name="description" content="Breakfast, lunch, drinks and desserts at The Green Cup Café: croissants, eggs on toast, sandwiches, soup, coffee, tea and cake.">
+<meta name="theme-color" content="#5b3b22">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Karla:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ===================== Header ===================== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img class="brand__mark" src="images/mark.png" alt="" width="201" height="89">
+      <span class="brand__text">
+        <span class="brand__name">The Green Cup</span>
+        <span class="brand__tag">Café</span>
+      </span>
+    </a>
+
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="index.html">Home</a></li>
+        <li><a class="nav__link" href="about.html">About</a></li>
+        <li><a class="nav__link" href="menu.html" aria-current="page">Menu</a></li>
+        <li><a class="nav__link" href="contact.html">Contact</a></li>
+      </ul>
+      <a class="btn btn--sage btn--sm header-cta" href="contact.html">Visit us</a>
+    </nav>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr-only">Open menu</span>
+      <span class="nav-toggle__bars" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===================== Page head ===================== -->
+  <section class="page-head">
+    <div class="container">
+      <div class="page-head__inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Menu</span>
+        </nav>
+        <h1>What we serve</h1>
+        <p>Breakfast until we stop serving breakfast, lunch until the kitchen
+          closes, and coffee all day in between.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Today's board ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="board reveal">
+        <p class="eyebrow">Today's board</p>
+        <h2 class="board__title">A few things that change with the day</h2>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Soup of the day</span>
+              <span class="menu-item__leader" aria-hidden="true"></span>
+              <span class="menu-item__price">$7.50</span>
+            </div>
+            <p class="menu-item__desc">Made each morning and served with crusty bread and butter.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Cake of the day</span>
+              <span class="menu-item__leader" aria-hidden="true"></span>
+              <span class="menu-item__price">$6.00</span>
+            </div>
+            <p class="menu-item__desc">Ask at the counter — it is whichever one came out best.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Filter coffee, refillable</span>
+              <span class="menu-item__leader" aria-hidden="true"></span>
+              <span class="menu-item__price">$3.00</span>
+            </div>
+            <p class="menu-item__desc">Bottomless while you are sitting with us.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Full menu ===================== -->
+  <section class="section section--flush">
+    <div class="container">
+
+      <div class="section-head" data-reveal-group>
+        <p class="eyebrow reveal">The full menu</p>
+        <h2 class="section-head__title reveal">Pick a category</h2>
+        <p class="lede reveal">Everything is made to order. Ask us about
+          allergens and we will happily check with the kitchen.</p>
+      </div>
+
+      <div class="filter-bar" role="group" aria-label="Filter the menu by category">
+        <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-btn" type="button" data-filter="breakfast" aria-pressed="false">Breakfast</button>
+        <button class="filter-btn" type="button" data-filter="lunch" aria-pressed="false">Lunch</button>
+        <button class="filter-btn" type="button" data-filter="drinks" aria-pressed="false">Drinks</button>
+        <button class="filter-btn" type="button" data-filter="desserts" aria-pressed="false">Desserts</button>
+      </div>
+
+      <!-- Breakfast -->
+      <section class="menu-category" data-category="breakfast" aria-labelledby="cat-breakfast">
+        <div class="menu-category__head">
+          <h2 id="cat-breakfast">Breakfast</h2>
+          <span class="count">Served until 11:30</span>
+          <span class="menu-category__rule" aria-hidden="true"></span>
+        </div>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Butter croissant</span>
+              <span class="menu-item__leader" aria-hidden="true"></span>
+              <span class="menu-item__price">$3.50</span>
+            </div>
+            <p class="menu-item__desc">Baked each morning and served warm with jam and salted butter.</p>
+            <p class="menu-item__tags"><span class="tag">Vegetarian</span></p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Eggs on toast</span>
+              <span class="menu-item__leader" aria-hidden="true"></span>
+              <span class="menu-item__price">$8.50</span>
+            </div>
+            <p class="menu-item__desc">Two eggs any style on sourdough, with dressed leaves on the side.</p>
+            <p class="menu-item__tags"><span class="tag">Vegetarian</span></p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Buttermilk pancakes</span>
+              <span class="menu-item__leader" aria-hidden="true"></span>
+              <span class="menu-item__price">$9.00</span>
+            </div>
+            <p class="menu-item__desc">A stack with maple syrup and berries, or sugar and lemon.</p>
+            <p class="menu-item__tags"><span class="tag">Vegetarian</span></p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Breakfast sandwich</span>
+              <span class="menu-item__leader" aria-hidden="true"></span>
+              <span class="menu-item__price">$8.00</span>
+            </div>
+            <p class="menu-item__desc">Fried egg, cheddar and smoky bacon in a toasted bun.</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Lunch -->
+      <section class="menu-category" data-category="lunch" aria-labelledby="cat-lunch">
+        <div class="menu-category__head">
+          <h2 id="cat-lunch">Lunch</h2>
+          <span class="count">Served from 11:30</span>
+          <span class="menu-category__rule" aria-hidden="true"></span>
+        </div>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Green Cup sandwich</span>
+              <span class="menu-item__leader" aria-hidden="true"></span>
+              <span class="menu-item__price">$11.50</span>
+            </div>
+            <p class="menu-item__desc">Chicken, bacon, lettuce and tomato in toasted bread, cut corner to corner.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Garden salad bowl</span>
+              <span class="menu-item__leader" aria-hidden="true"></span>
+              <span class="menu-item__price">$10.00</span>
+            </div>
+            <p class="menu-item__desc">Leaves, roast vegetables, seeds and house dressing.</p>
+            <p class="menu-item__tags"><span class="tag">Vegetarian</span></p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Soup of the day</span>
+              <span class="menu-item__leader" aria-hidden="true"></span>
+              <span class="menu-item__price">$7.50</span>
+            </div>
+            <p class="menu-item__desc">Made each morning, served with crusty bread and butter.</p>
+            <p class="menu-item__tags"><span class="tag">Ask us</span></p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Cheese &amp; tomato toastie</span>
+              <span class="menu-item__leader" aria-hidden="true"></span>
+              <span class="menu-item__price">$7.00</span>
+            </div>
+            <p class="menu-item__desc">Sourdough, mature cheddar, tomato and a little mustard.</p>
+            <p class="menu-item__tags"><span class="tag">Vegetarian</span></p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Drinks -->
+      <section class="menu-category" data-category="drinks" aria-labelledby="cat-drinks">
+        <div class="menu-category__head">
+          <h2 id="cat-drinks">Drinks</h2>
+          <span class="count">All day</span>
+          <span class="menu-category__rule" aria-hidden="true"></span>
+        </div>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Espresso</span>
+              <span class="menu-item__leader" aria-hidden="true"></span>
+              <span class="menu-item__price">$3.00</span>
+            </div>
+            <p class="menu-item__desc">A short, sharp double shot. Milk on request.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Flat white</span>
+              <span class="menu-item__leader" aria-hidden="true"></span>
+              <span class="menu-item__price">$4.00</span>
+            </div>
+            <p class="menu-item__desc">Double shot with steamed milk and a thin layer of foam.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Cappuccino</span>
+              <span class="menu-item__leader" aria-hidden="true"></span>
+              <span class="menu-item__price">$4.00</span>
+            </div>
+            <p class="menu-item__desc">Double shot, steamed milk and a proper layer of foam.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Pot of tea</span>
+              <span class="menu-item__leader" aria-hidden="true"></span>
+              <span class="menu-item__price">$3.50</span>
+            </div>
+            <p class="menu-item__desc">Breakfast, green or herbal, served in a pot for one.</p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Iced matcha latte</span>
+              <span class="menu-item__leader" aria-hidden="true"></span>
+              <span class="menu-item__price">$5.00</span>
+            </div>
+            <p class="menu-item__desc">Stone-ground matcha shaken with milk and plenty of ice.</p>
+            <p class="menu-item__tags"><span class="tag">Cold</span></p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Fresh juice</span>
+              <span class="menu-item__leader" aria-hidden="true"></span>
+              <span class="menu-item__price">$4.50</span>
+            </div>
+            <p class="menu-item__desc">Orange, apple or grapefruit, squeezed to order.</p>
+            <p class="menu-item__tags"><span class="tag">Cold</span></p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Desserts -->
+      <section class="menu-category" data-category="desserts" aria-labelledby="cat-desserts">
+        <div class="menu-category__head">
+          <h2 id="cat-desserts">Desserts</h2>
+          <span class="count">While they last</span>
+          <span class="menu-category__rule" aria-hidden="true"></span>
+        </div>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Chocolate layer cake</span>
+              <span class="menu-item__leader" aria-hidden="true"></span>
+              <span class="menu-item__price">$6.00</span>
+            </div>
+            <p class="menu-item__desc">Three layers, dark ganache and berries when they are in season.</p>
+            <p class="menu-item__tags"><span class="tag">Vegetarian</span></p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Berry tart</span>
+              <span class="menu-item__leader" aria-hidden="true"></span>
+              <span class="menu-item__price">$5.50</span>
+            </div>
+            <p class="menu-item__desc">Vanilla custard, crisp pastry and whatever fruit looks best.</p>
+            <p class="menu-item__tags"><span class="tag">Vegetarian</span></p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Brownie</span>
+              <span class="menu-item__leader" aria-hidden="true"></span>
+              <span class="menu-item__price">$3.75</span>
+            </div>
+            <p class="menu-item__desc">Dense, fudgy, and better warm.</p>
+            <p class="menu-item__tags"><span class="tag">Vegetarian</span></p>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item__row">
+              <span class="menu-item__name">Cookie of the day</span>
+              <span class="menu-item__leader" aria-hidden="true"></span>
+              <span class="menu-item__price">$3.00</span>
+            </div>
+            <p class="menu-item__desc">There is always one — ask at the counter which flavour.</p>
+            <p class="menu-item__tags"><span class="tag">Vegetarian</span></p>
+          </li>
+        </ul>
+      </section>
+
+      <div class="empty-state" role="status">
+        <h3>Nothing in that category just now</h3>
+        <p class="lede">Choose <strong>All</strong> to see the whole menu.</p>
+      </div>
+
+      <div class="menu-note">
+        <strong>Good to know.</strong> Please tell us about allergies before you
+        order — our kitchen handles nuts, dairy, gluten and eggs, and we will
+        always check with the kitchen. Oat, soy and lactose-free milk are
+        available at no extra charge.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Photos ===================== -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal-group>
+        <p class="eyebrow reveal">From the counter</p>
+        <h2 class="section-head__title reveal">What it looks like when it arrives</h2>
+      </div>
+
+      <div class="grid grid--cards" data-reveal-group>
+        <figure class="stack reveal">
+          <div class="media-frame media-frame--wide">
+            <img src="images/breakfast-plate.jpg" alt="Eggs and salad on toasted bread served on a white plate." width="224" height="172" loading="lazy">
+          </div>
+          <figcaption class="caption">Eggs on toast, any style.</figcaption>
+        </figure>
+        <figure class="stack reveal">
+          <div class="media-frame media-frame--wide">
+            <img src="images/salad-bowl.jpg" alt="A garden salad bowl with leaves, tomatoes and grilled chicken." width="200" height="154" loading="lazy">
+          </div>
+          <figcaption class="caption">The garden salad bowl.</figcaption>
+        </figure>
+        <figure class="stack reveal">
+          <div class="media-frame media-frame--wide">
+            <img src="images/drinks.jpg" alt="Two cold fruit drinks in glasses on a wooden table." width="240" height="144" loading="lazy">
+          </div>
+          <figcaption class="caption">Cold drinks, squeezed to order.</figcaption>
+        </figure>
+        <figure class="stack reveal">
+          <div class="media-frame media-frame--wide">
+            <img src="images/desserts.jpg" alt="A plate of brownies, cookies and macarons." width="224" height="144" loading="lazy">
+          </div>
+          <figcaption class="caption">Whatever came out of the oven.</figcaption>
+        </figure>
+        <figure class="stack reveal">
+          <div class="media-frame media-frame--wide">
+            <img src="images/latte.jpg" alt="A latte in a tall glass on a wooden table." width="240" height="144" loading="lazy">
+          </div>
+          <figcaption class="caption">Latte, single or double shot.</figcaption>
+        </figure>
+        <figure class="stack reveal">
+          <div class="media-frame media-frame--wide">
+            <img src="images/berry-tart.jpg" alt="A berry tart topped with raspberries, blackberries and blueberries." width="240" height="154" loading="lazy">
+          </div>
+          <figcaption class="caption">Berry tart, best before three.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA ===================== -->
+  <section class="section section--deep">
+    <div class="container">
+      <div class="cta reveal">
+        <p class="eyebrow">Hungry yet?</p>
+        <h2>Come in and order at the counter</h2>
+        <p>No reservations needed. If you would rather ask a question first, the
+          number below is answered all day.</p>
+        <a class="btn btn--light" href="contact.html">Contact us</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== Footer ===================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo-inverse.png" alt="The Green Cup Café" width="206" height="129">
+        <p>A small neighbourhood café serving coffee, breakfast, lunch and cake
+          on Maple Street in Riverside.</p>
+        <div class="social">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="The Green Cup Café on Instagram">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="The Green Cup Café on Facebook">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3Z"/></svg>
+          </a>
+          <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="The Green Cup Café on X">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h3l-7.5 8.6L22 22h-6.8l-5.3-6.9L3.8 22H.8l8-9.2L2 2h7l4.8 6.3Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Visit</h3>
+        <ul>
+          <li>123 Maple Street<br>Riverside, CA 92507</li>
+          <li><a href="tel:+15551234567">+1 (555) 123-4567</a></li>
+          <li><a href="mailto:hello@thegreencup.com">hello@thegreencup.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Opening hours</h3>
+        <ul>
+          <li>Mon–Fri · 7:00–17:00</li>
+          <li>Saturday · 8:00–16:00</li>
+          <li>Sunday · 8:00–14:00</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-base">
+      <p>© <span id="year">2026</span> The Green Cup Café. All rights reserved.</p>
+      <p>Coffee, food and a quiet corner in Riverside.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js" defer></script>
+</body>
+</html>
